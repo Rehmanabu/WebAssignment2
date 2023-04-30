@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Rehaman</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="Hero">
+        <div class="Nav">
+            <ul>
+                <div class="min">
+                <li><a href="bio.html">JOHN <span>WICK</span></a></li>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="person.html">Personalities</a></li>
+                <li><a class="ct" href="cities.html">Cities</a></li>
+                <li><a class="sp" href="spot.html">Tourist<span><br>Spots</span></a></li>
+                <li><a href="contact.html">Contact</a></li>
+            
+            </ul>
+        </div>
+        <div class="head">
+            <div class="data">
+                <h3>Hey,I'm </h3>
+                <h1>JOHN WICK</h1>
+                <h3>SERIAL KILLER</h3>
+            </div>
+            <div class="pic">
+                <img src="hd-john-wick-movie-cover-b77c3u0pfl8lraao-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="intro">
+        
+        <h1>About Me</h1>
+        <p>Legendary assassin John Wick retired from his violent career after marrying the love of his life. Her sudden death leaves John in deep mourning. When sadistic mobster Iosef Tarasov and his thugs steal John's prized car and kill the puppy that was a last gift from his wife, John unleashes the remorseless killing machine within and seeks vengeance. Meanwhile, Iosef's father -- John's former colleague -- puts a huge bounty on John's head.</p>
+            <p>A legendary hitman who is ready to kill anyone anywhere anytime with no failure. The only thing you need to worry about is money and everything else will be taken care.</p>
+        <a href="bio.html"><button>Learn More</button></a>
+
+    </div>
+
+
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="desktop-1920x1080.jpg" style="width:100%">
+      <div class="text">Assassination Of a president</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="desktop-1920x1080 (1).jpg" style="width:100%">
+      <div class="text">Sneaking In Rain </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="desktop-1920x1080 (2).jpg" style="width:100%">
+      <div class="text">Leaving After Job</div>
+    </div>
+  
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }</script>
+
+    <div class="video">
+        <div class="dat">
+                <h1>Fighting Style</h1>
+                <p>I use anything that can be used to kill anyone icluding a pencil from which i once killed several people because i was injured and out of bullets</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut est reiciendis itaque dolorem tempore cum.</p>
+                <button>Learn More</button>
+        </div>
+        <div class="vid"><video loop src="John Wick Chapter 2 (2017) - Pencil Kill Scene (online-video-cutter.com).mp4" muted autoplay></video></div>
+    </div>
+
+    <div class="services">
+        <h2>SERVICES</h2>
+        <h1>Best services for <span>Enemy Elimination</span></h1>
+        <p>I provide the best services you could ask for in this field</p>
+
+        <div class="catagory">
+            <div class="container">
+                <img src="sniper-rifle-icon-black-color-vector-illustration-flat-style-simple-image-sniper-rifle-icon-black-color-vector-illustration-flat-173338194-removebg-preview.png" alt="">
+                <h4>Assassination</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, officia?</p>
+            </div>
+            <div class="container">
+                <img src="istockphoto-1480829550-612x612-removebg-preview.png" alt="">
+                <h4>Bombing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iste officiis id.</p>
+            </div>
+            <div class="container">
+                <img src="kidnap-icon-13-removebg-preview.png" alt="">
+                <h4>Kidnaping</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore repudiandae assumenda ad quam?</p>
+            </div>
+            <div class="container">
+                <img src="Danger-icon-removebg-preview.png" alt="">
+                <h4>Threatning</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, quibusdam? Ut quis maxime pariatur deserunt.</p>
+            </div>
+            <div class="container">
+                <img src="png-clipart-stabbing-computer-icons-knife-murder-knife-text-logo-removebg-preview.png" alt="">
+                <h4>Murder</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, rerum laboriosam. Voluptas, error quam.</p>
+            </div>
+            <div class="container">
+                <img src="physical-bullying-black-glyph-icon-harassment-beat-and-violence-sign-for-web-page-mobile-app-button-logo-2CRYJCM-removebg-preview.png" alt="">
+                <h4>Beating</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nemo culpa deserunt!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        
+         <div class="body">
+            <div class="social_media">
+                <h4>Contact</h4>
+                <p>758 E. Beechwood Lane Bay Shore, NY 11706</p>
+                <p>youremail@address.com, +1-202-555-01-0158</p>
+               </div>
+                <div class="media">
+                    <span><img src="facebook-logo-white-11549845815wclpvkfdsb-removebg-preview.png" alt=""></span>
+                    <span><img src="30-300677_2017-intertech-americas-corp-twitter-icons-png-white-removebg-preview.png" alt=""></span>
+                    <span><img src="-51609193448mids70tdmp-removebg-preview.png" alt=""></span>
+                    <span><img src="white-youtube-icon-png-28-removebg-preview.png" alt=""></span>
+                </div>
+                
+            
+            
+         </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<div class="icon-bar">
+    <a href="https://web.facebook.com/?_rdc=1&_rdr" class="facebook"><img src="facebook-logo-white-11549845815wclpvkfdsb-removebg-preview.png" alt=""></a>
+    <a href="https://twitter.com/" class="twitter"><img src="30-300677_2017-intertech-americas-corp-twitter-icons-png-white-removebg-preview.png" alt=""></a>
+    <a href="https://www.instagram.com/" class="google"><img src="-51609193448mids70tdmp-removebg-preview.png" alt=""></a>
+    <a href="https://www.youtube.com/" class="youtube"><img src="white-youtube-icon-png-28-removebg-preview.png" alt=""></a>
+  </div>
+</body>
+</html>
